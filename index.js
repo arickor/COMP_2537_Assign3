@@ -50,10 +50,10 @@ const paginate = async (currentPage, PAGE_SIZE, pokemons) => {
     $('#pokeCards').append(`
       <div class="pokeCard card" pokeName=${res.data.name}   >
         <h3>${res.data.name.toUpperCase()}</h3> 
-        <img src="${res.data.sprites.front_default}" alt="${res.data.name}"/>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pokeModal">
           More
         </button>
+        <img src="${res.data.sprites.front_default}" alt="${res.data.name}"/>
         </div>  
         `)
   })
